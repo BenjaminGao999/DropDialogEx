@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void showDialog() {
         final FrameLayout flMain = (FrameLayout) findViewById(R.id.activity_main);
-        final DropDialogView dropDialogView = new DropDialogView(MainActivity.this);
+        final AnotherCustomDialog dropDialogView = new AnotherCustomDialog(MainActivity.this);
         flMain.addView(dropDialogView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        dropDialogView.showDialog(new DropDialogView.IEvent() {
+        dropDialogView.showDialog(new AnotherCustomDialog.IEvent() {
             @Override
             public void onDismissCompleted() {
                 flMain.removeView(dropDialogView);
