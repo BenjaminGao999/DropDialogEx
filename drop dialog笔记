@@ -1,2 +1,4 @@
 1.实现了背景色的渐变
 2.实现了插值器动画
+3.以view封装view.
+4.layout.main_activity.xml中的include引用被已经封装好的view替代。
